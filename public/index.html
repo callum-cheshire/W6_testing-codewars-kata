@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todos</title>
+    <link rel="stylesheet" href="css/index.css" />
+    <script src="js/index.js" defer type="module"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Todos!</h1>
+      <p>Yet another app to keep track of all those things you said you'd do</p>
+    </header>
+    <main>
+      <section>
+        <h3>Create a new todo</h3>
+        <form id="new-todo">
+          <label>
+            Task
+            <input
+              name="task"
+              type="text"
+              placeholder="Enter a task..."
+              required
+            />
+          </label>
+          <label>
+            Completion date
+            <input name="completionDate" type="date" required />
+          </label>
+          <button title="Create a new todo">➕ Create!</button>
+        </form>
+      </section>
+      <section>
+        <h3>Existing todos</h3>
+        <p id="summary"></p>
+        <ul id="todos"></ul>
+      </section>
+    </main>
+  </body>
+</html>
